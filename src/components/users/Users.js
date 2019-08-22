@@ -33,7 +33,7 @@ const userStyle = {
 const cardContainerStyle = {
   marginTop: '.7rem',
   overflowY: 'auto',
-  height: '600px'
+  height: '607px'
 };
 
 export default Users;
