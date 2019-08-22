@@ -8,10 +8,12 @@ const Users = ({ users, loading }) => {
     return <Spinner />;
   } else {
     return (
-      <div style={userStyle}>
-        {users.map(user => (
-          <UserItem key={user.id} user={user} />
-        ))}
+      <div style={cardContainerStyle}>
+        <div style={userStyle}>
+          {users.map(user => (
+            <UserItem key={user.id} user={user} />
+          ))}
+        </div>
       </div>
     );
   }
@@ -26,6 +28,12 @@ const userStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
   gap: '1rem'
+};
+
+const cardContainerStyle = {
+  marginTop: '.7rem',
+  overflowY: 'auto',
+  height: '600px'
 };
 
 export default Users;
