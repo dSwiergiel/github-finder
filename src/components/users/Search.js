@@ -23,6 +23,11 @@ const Search = () => {
     }
   };
 
+  const onClear = e => {
+    e.preventDefault();
+    setText('');
+    githubContext.getUsers();
+  };
 
 
   return (
@@ -40,7 +45,7 @@ const Search = () => {
             type="button"
             value="Clear"
             className="btn btn-light btn-block mt0"
-            onClick={githubContext.clearUsers}
+            onClick={onClear}
           />
           <input
             type="submit"

@@ -69,7 +69,7 @@ const GithubState = props => {
   
       dispatch({
         type: GET_USERS,
-        payload: res.data.items,
+        payload: res.data,
       })
     };
   // Get Repos
