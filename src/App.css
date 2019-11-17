@@ -52,6 +52,10 @@ body {
   background-color: #fff;
   color: #333;
 }
+h1, p,label,strong, button, a, li {
+  word-break: normal;
+
+}
 
 a {
   color: var(--primary-color);
@@ -90,6 +94,7 @@ input {
   border-radius: 0;
 }
 /* Text Styles*/
+
 
 .x-large {
   font-size: 4rem;
