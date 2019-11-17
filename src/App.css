@@ -58,9 +58,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   color: #666;
-}
+} */
 
 ul {
   list-style: none;
@@ -82,7 +82,6 @@ img {
 }
 
 .clearfix::after {
-  content: "";
   clear: both;
   display: table;
 }
@@ -380,9 +379,9 @@ input {
   border: #ccc solid 1px;
 }
 
-.btn:hover {
+/* .btn:hover {
   opacity: 0.8;
-}
+} */
 
 .bg-light,
 .badge-light {
@@ -467,9 +466,9 @@ table th {
 /* Mobile Styles */
 
 @media (max-width: 500px) {
-  .card, .btn {
+  /* .card, .btn {
     padding: 5px 10px;
-  }
+  } */
   .container {
     padding: 15px;
   }

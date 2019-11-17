@@ -37,7 +37,7 @@ const Users = () => {
 const containerHeight = window.innerWidth < 480 ? '40vh' : '75vh';
 
 const cardContainerStyle = {
-  paddingRight: '.3rem',
+  paddingRight: '.1rem',
   marginTop: '.7rem',
   overflowY: 'auto',
   height: containerHeight
