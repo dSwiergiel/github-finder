@@ -1,3 +1,7 @@
+This branch contains the application in its completed state but without use of context or hooks. 
+
+The application was refactored to include context and hooks in the branch contextAndHooksRefactor.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
