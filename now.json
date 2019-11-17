@@ -1,6 +1,6 @@
 {
     "env": {
-      "REACT_APP_GITHUB_CLIENT_ID": "@github_client_ID",
+      "REACT_APP_GITHUB_CLIENT_ID": "@github_client_id",
       "REACT_APP_GITHUB_CLIENT_SECRET": "@github_secret_id"
     }
   }
