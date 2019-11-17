@@ -81,6 +81,15 @@ img {
   word-break: break-all;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+input {
+  border-radius: 0;
+}
 /* Text Styles*/
 
 .x-large {
@@ -460,7 +469,6 @@ table th {
 @media (max-width: 500px) {
   .card, .btn {
     padding: 5px 10px;
-    margin: 10px 0px 0px;
   }
   .container {
     padding: 15px;
@@ -471,8 +479,10 @@ table th {
   .grid-2,
   .grid-3,
   .grid-4 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
+
+
   /* Text Styles */
   .x-large {
     font-size: 3rem;

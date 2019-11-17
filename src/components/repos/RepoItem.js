@@ -5,7 +5,8 @@ const RepoItem = ({ repo }) => {
   return (
     <div className="card my-1">
       <h3>
-        <a
+        <div style={{maxWidth: '75%', display: 'inline-block'}}>
+                <a
           href={repo.html_url}
           target="_blank"
           className="mr-1"
@@ -13,16 +14,22 @@ const RepoItem = ({ repo }) => {
         >
           {repo.name}
         </a>
+        <div style={{display: 'inline-block'}}>
         <i className="fas fa-code mr-1" />
         {repo.language}{' '}
-        <span style={{ float: 'right' }}>
+        </div>
+        </div>
+
+        <h3 style={{ float: 'right'}}>
           <i className="fas fa-star mr-1" />
           {repo.stargazers_count}
-        </span>
+        </h3>
+        <div className="clearfix"></div>
       </h3>
     </div>
   );
 };
+
 
 RepoItem.propTypes = {
   repo: PropTypes.object.isRequired
