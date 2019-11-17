@@ -12,7 +12,7 @@ const Users = () => {
   }
 
   useEffect(() => {
-    if(users.length == 0){
+    if(users.length === 0){
       fetchData()
     }
   }, []);
@@ -22,7 +22,7 @@ const Users = () => {
   } else {
     return (
       <div style={cardContainerStyle}>
-        <div style={userStyle}>
+        <div className="grid-3">
           {users.map(user => (
             <UserItem key={user.id} user={user} />
           ))}
@@ -33,17 +33,14 @@ const Users = () => {
 
 };
 
-
-const userStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gap: '1rem'
-};
+// for setting mobile height of card container
+const containerHeight = window.innerWidth < 480 ? '40vh' : '75vh';
 
 const cardContainerStyle = {
+  paddingRight: '.3rem',
   marginTop: '.7rem',
   overflowY: 'auto',
-  height: '607px'
+  height: containerHeight
 };
 
 export default Users;

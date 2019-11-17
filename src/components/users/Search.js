@@ -39,6 +39,7 @@ const Search = () => {
           placeholder="Search Users..."
           value={text}
           onChange={onChange}
+          style={{marginBottom: '15px'}}
         />
         <div className="grid-2">
           <input

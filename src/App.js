@@ -10,6 +10,8 @@ import Home from './components/pages/Home.js'
 import NotFound from './components/pages/NotFound';
 
 import './App.css';
+import './normalize.css';
+
 
 const App = () => {
   // useEffect(() => {
