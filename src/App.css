@@ -31,7 +31,7 @@
 /* / Scroll bar */
 
 :root {
-  --primary-color: #dc3545;
+  --primary-color: #20718a;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -67,7 +67,8 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Utilities */
@@ -456,7 +457,14 @@ table th {
 
 /* Mobile Styles */
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+  .card, .btn {
+    padding: 5px 10px;
+    margin: 10px 0px 0px;
+  }
+  .container {
+    padding: 15px;
+  }
   .hide-sm {
     display: none;
   }

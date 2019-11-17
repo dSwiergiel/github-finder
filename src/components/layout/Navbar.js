@@ -7,7 +7,7 @@ const Navbar = ({ icon, title }) => {
     <nav className="navbar bg-primary">
       <Link to="/">
         {' '}
-        <h1>
+        <h1 style={{margin: '0px'}}>
           <i className={icon} /> {title}
         </h1>
       </Link>
