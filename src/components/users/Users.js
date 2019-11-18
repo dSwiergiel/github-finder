@@ -34,7 +34,7 @@ const Users = () => {
 };
 
 // for setting mobile height of card container
-const containerHeight = window.innerWidth < 480 ? '40vh' : '75vh';
+const containerHeight = window.innerWidth < 480 ? '40vh' : '70vh';
 
 const cardContainerStyle = {
   paddingRight: '.1rem',
